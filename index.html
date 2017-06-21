@@ -3,7 +3,8 @@
 <head>
 <title>Basic 87</title>
 <meta charset="iso-8859-1">
-<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -57,6 +58,66 @@
         <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna urnaretra lor urna neque sed quis orci nulla laoremut vitae doloreet condimentumst.</p>
       </section>
     </div>
+
+    <!-- form -->
+    <div class="container"> 
+      <div class="row">
+        <div class="col-md-4">
+          <form action="api/location.php" method="POST">
+          <div class="message"></div>
+            <div class="form-group">
+              <label for="marque">Marque</label>
+              <input type="text" class="form-control" id="marque" name="marque">
+            </div>
+            <div class="form-group">
+              <label for="modele">Modele</label>
+              <input type="text" class="form-control" id="modele" name="modele">
+            </div>
+            <div class="form-group">
+              <label for="annee">Annee</label>
+              <input type="date" class="form-control" id="annee" name="annee">
+            </div>
+            <div class="form-group">
+            <label for="couleur">Couleur</label>
+            <select name="couleur" class="form-control">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="blue">Blue</option>
+                <option value="mike">Mike</option>
+            </select>
+            </div>
+            <div class="form-group">
+              <label for="image">Image</label>
+              <input type="text" class="form-control" id="image" name="image">
+            </div>
+            <button type="submit" class="btn btn-default btn-success">Submit</button>
+        </form>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <!-- right column -->
+    <aside id="right_column">
+      <h2 class="title">Categories</h2>
+        <nav>
+          <ul>
+            <li><a href="#">Free Website Templates</a></li>
+            <li><a href="#">Free CSS Templates</a></li>
+            <li><a href="#">Free XHTML Templates</a></li>
+            <li><a href="#">Free Web Templates</a></li>
+            <li><a href="#">Free Website Layouts</a></li>
+            <li><a href="#">Free HTML 5 Templates</a></li>
+            <li><a href="#">Free Webdesign Templates</a></li>
+            <li><a href="#">Free FireWorks Templates</a></li>
+            <li><a href="#">Free PNG Templates</a></li>
+            <li class="last"><a href="#">Free Website Themes</a></li>
+          </ul>
+        </nav>
+      <!-- /nav -->
+    </aside>
+        </div>
+      </div>
+    </div>
+    
     <!-- main content -->
     <div id="content">
       <section id="services" class="last clear">
@@ -105,6 +166,7 @@
       </nav>
       <!-- /nav -->
     </aside>
+
     <!-- / content body -->
   </div>
 </div>
@@ -115,5 +177,11 @@
     <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
   </footer>
 </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/location.js"></script>
 </body>
 </html>
